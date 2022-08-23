@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PROYECTO</title>
+</head>
+<body>
+    <header>
+        <!-- Listas ordenadas -->
+        <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+        <!-- Listas no ordenadas -->
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+        <ul>
+            <li>Boton
+                <ul>
+                    <li>Submenu</li>
+                    <li>Submenu</li>
+                    <li>Submenu</li>
+                </ul>
+            </li>
+            <li>Boton</li>
+            <li>Boton</li>
+        </ul>
+    </header>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis excepturi doloribus vitae eius dicta?</dd>
+
+        <dt>CSS</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, placeat in assumenda obcaecati pariatur quia voluptatem perferendis libero doloremque ipsam.</dd>
+    </dl>
+    <table border="5px" cellpadding="20px" cellspacing="15px">
+        <tr>
+            <th>F1 Titulo col 1</th>
+            <th>F1 Titulo col 2</th>
+            <th>F1 Titulo col 3</th>
+        </tr>
+        <tr>
+            <td>F2 col 1 data</td>
+            <td>F2 col 2 data</td>
+            <td>F2 col 3 data</td>
+        </tr>
+        <tr>
+            <td>F3 col 1 data</td>
+            <td>F3 col 2 data</td>
+            <td>F3 col 3 data</td>
+        </tr>
+    </table>
+<br>
+    <table border="1px" cellpadding="20px" cellspacing="15px">
+        <tr>
+            <th colspan="3">HEADER</th>
+        </tr>
+        <tr width="20px" heigth="20px">
+            <td rowspan="2">SECTION</td>
+            <td rowspan="2">SECTION</td>
+            <td rowspan="2">SECTION</td>
+        </tr>
+        <tr>
+            <!-- espacio vacio por espacio de segunda columna -->
+        </tr>
+        <tr>
+            <td colspan="3">FOOTER</td>
+        </tr>
+    </table>
+
+    <!-- Formularios -->
+<br>
+    <form action="post">
+        <fieldset>
+            <legend> FORMULARIO DE PRUEBA </legend>
+        <div>
+            <label for="name">INGRESE SU NOMBRE</label>
+            <input type="text" id="name" placeholder="Ingrese su nombre">
+        </div>
+        <div>
+            <label for="email">INGRESE SU EMAIL</label>
+            <input type="text" id="email" placeholder="Ingrese su email">
+        </div>
+        <div>
+            <label for="date">INGRESE SU FECHA DE NACIMIENTO</label>
+            <input type="date" id="date">
+        </div>
+        <div>
+            <h3>¿ESTUDIAS?</h3>
+            <input type="radio" name="studioact" value="SI">SI
+            <input type="radio" name="studioact" value="NO">NO
+        </div>
+        <div>
+            <h3>ES USTED MAYOR o MENOR</h3>
+            <div>
+                <label for="esMayor">MAYOR</label>
+                <input type="checkbox" name="mayor" id="esMayor" value="esMayor">SI
+            </div>
+            <div>
+                <label for="esMenor">MENOR</label>
+                <input type="checkbox" name="mayor" id="esMenor" value="esMenor">NO
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="commet">Comentario</label>
+            <div>
+                <textarea name="commet" id="comment" cols="30" rows="10"></textarea>
+            </div>
+            <input id="enviar" type="submit" value="enviar">
+            <input type="button" value="reset" value="limpiar">
+        </div>
+        </fieldset>
+    </form>
+</body>
+</html>
