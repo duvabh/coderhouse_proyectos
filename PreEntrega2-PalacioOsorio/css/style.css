@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+}
+
+.header_contenedor {
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.header_contenedor header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header_contenedor header .logo a{
+    font-family: 'Righteous';
+    font-size: 38px;
+    color: #1CB698;
+    text-decoration: none;
+}
+
+.header_contenedor header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header_contenedor header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.header_contenedor header nav ul li a:hover {
+    color: #1CB698;
+}
+
+/* Secction inicio */
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 0.1)),
+    url(../assets/img/back_black.jpg);
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+.inicio .inicio_banner {
+    padding: 40px;
+    background-color: #1e2326;
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.inicio .inicio_banner img {
+    border-radius: 100%;
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    width: 80%;
+    margin: auto;
+}
+
+.inicio .inicio_banner h1 {
+    margin-top: 40px;
+    font-size: 45px;
+    font-family: 'Righteous';
+}
+
+.inicio .inicio_banner h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.inicio .inicio_banner .inicio_redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .inicio_banner .inicio_redes a:hover {
+    background-color: #1CB698;
+}
