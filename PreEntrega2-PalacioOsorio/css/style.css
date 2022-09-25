@@ -7,6 +7,7 @@
     font-family: 'Work Sans';
 }
 
+
 body {
     width: 100vw;
     height: 100vh;
@@ -54,6 +55,15 @@ body {
 
 .header_contenedor header nav ul li a:hover {
     color: #1CB698;
+}
+
+.header_nav_responsive {
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
 }
 
 /* Secction inicio */
@@ -112,4 +122,90 @@ body {
 
 .inicio .inicio_banner .inicio_redes a:hover {
     background-color: #1CB698;
+}
+
+/* S o b r e  m i */
+.sobremi_contenido {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.inicio .sobremi_contenido {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi_contenido h2 {
+    font-size: 65px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.inicio .sobremi_contenido p {
+    font: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.inicio .sobremi_contenido p span {
+    color: #1CB698;
+    font-weight: bold;
+}
+
+.sobremi_contenido .filas {
+   display: flex;
+
+}
+
+.sobremi_contenido .filas .columnas {
+    width: 50%;
+}
+
+.sobremi_contenido .filas .columnas h3 {
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 30px;
+}
+
+.sobremi_contenido .filas .columnas ul {
+    list-style: none;
+}
+
+.sobremi_contenido .filas .columnas ul li {
+    margin: 12px 0;
+}
+
+.sobremi_contenido .filas .columnas ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+
+.sobremi_contenido .filas .columnas .sobremi_intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi_contenido .filas .columnas .sobremi_intereses .interes {
+    width: 100px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi_contenido .filas .columnas .sobremi_intereses .interes:hover {
+    background-color: #1CB698;
+}
+
+.sobremi_contenido .filas .columnas .sobremi_intereses .interes i {
+    font-size: 30px;
+    margin-bottom: 10px;
 }

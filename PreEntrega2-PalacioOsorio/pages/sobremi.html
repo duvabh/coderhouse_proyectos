@@ -4,47 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
-    <title>Portafolio</title>
+    <title>MI PORTAFOLIO</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__titulo">MI PORTAFOLIO</h1>
-            <nav class="header__titulo__menu">
-                <ul class="header__titulo__menu__list">
+    <!-- Menu encabezado -->
+    <div class="header_contenedor">
+        <header>
+            <div class="logo">
+                <a href="#">DUVAN PALACIO</a>
+            </div>
+            <nav id="header_nav">
+                <ul>
                     <li><a href="/index.html">INICIO</a></li>
                     <li><a href="/pages/sobremi.html">SOBRE MI</a></li>
-                    <li><a href="/pages/galeria.html">GALERIA</a></li>
                     <li><a href="/pages/skill.html">SKILL</a></li>
+                    <li><a href="/pages/curriculum.html">CURRICULUM</a></li>                
                     <li><a href="/pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
+            <div class="header_nav_responsive">
+                <i class="fa-duotone fa-bars"></i>
+            </div>
+        </div>
     </header>
-    <main class="main_sobremi">
-    <section class="main_sobremi_estudios">
-        <h2>Estudio</h2>
-        <p>· Analista de soporte en universal estudios</p>
-        <p>· Desarrollador junior FrontEnd Pixar</p>
-        <p>· Desarrollador Fullstack DP games</p>
+
+    <!-- Sección sobre mi -->
+    <section id="inicio" class="inicio">
+        <div class="sobremi_contenido">
+            <h2>Sobre Mí</h2>
+            <p>Ey soy <span>Duván Palacio</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque veritatis odio nihil expedita beatae porro. Minus ea vel repellendus deserunt eligendi quam, impedit voluptatem provident, temporibus autem sed? Maiores vel illum, error dolore porro quisquam quidem, delectus laudantium libero modi similique veniam distinctio, exercitationem suscipit cupiditate voluptatibus nostrum. Reprehenderit ducimus doloribus corrupti mollitia, excepturi rerum. Fugit, amet? Hic nostrum fugiat delectus quisquam perspiciatis sequi aperiam cum repellat at alias.</p>
+        
+            <div class="filas">            
+                <!-- Datos personales -->
+                <div class="columnas">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>F. cumpleaños:</strong>
+                            14-09-1989
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Medellin, Colombia
+                        </li>
+                        <li>
+                            <strong>Correo Elec:</strong>
+                            duvan.palacioo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ocupación</strong>
+                            Trabajador - Estudiante
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Datos intereses -->
+                <div class="columnas">
+                    <h3>Intereses</h3>
+                    <div class="sobremi_intereses">
+                        <div class="interes">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-radio"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>SERIES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span>PLAYA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-beer-mug-empty"></i>
+                            <span>CERVEZA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>CODIFICAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="main_sobremi_hobbies">
-        <h2>Hobbies</h2>
-        <p>· Jugar futbol</p>
-        <p>· Jugar videojuegos</p>
-        <p>· Pasear y conocer nuevas cosas</p>
-        <p>· Deportes extremos</p>
-        <p>· Leer</p>
-        <p>· La cocina</p>
-        <p>· Fotografia</p>
-    </section>
-</main>
-<footer class="footer">
-    <section class="footer_imag">
-        <img src="../img/circulo.png" alt="circulo infinito" class="footer_imag_logo">
-    </section>
-    <section class="footer__txt">
-        <p class="footer__txt_p">Duvan Palacio</p>
-    </section>
-</footer>
 </body>
 </html>
