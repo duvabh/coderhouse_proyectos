@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
 
 *{
     margin: 0;
@@ -208,4 +208,103 @@ body {
 .sobremi_contenido .filas .columnas .sobremi_intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
+}
+
+/* S K I L L */
+.skill_contenido {
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.inicio .skill_contenido {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skill_contenido h2 {
+    font-size: 65px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skill_contenido .fila {
+    display: flex;
+}
+
+
+.skill_contenido .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skill_contenido .skill .barra_skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skill_contenido .skill .progreso { 
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skill_contenido .skill .barra_skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -15px;
+    right: -20px;
+    font-size: 15px;
+}
+
+.skill_contenido .skill .barra_html {
+    width: 0%;
+    animation: 2s barra_html forwards;
+}
+
+.skill_contenido .skill .barra_css {
+    width: 0%;
+    animation: 2s barra_html forwards;
+}
+
+.skill_contenido .skill .barra_git {
+    width: 0%;
+    animation: 2s barra_html forwards;
+}
+
+.skill_contenido .skill .barra_javascript {
+    width: 0%;
+    animation: 2s barra_html forwards;
+}
+
+@keyframes barra_html {
+    0% {width: 0%;}
+    100%{width: 85%;}
+}
+
+@keyframes barra_css {
+    0% {width: 0%;}
+    100%{width: 65%;}
+}
+
+@keyframes barra_git {
+    0% {width: 0%;}
+    100%{width: 50%;}
+}
+
+@keyframes barra_javascript {
+    0% {width: 0%;}
+    100%{width: 10%;}
 }
