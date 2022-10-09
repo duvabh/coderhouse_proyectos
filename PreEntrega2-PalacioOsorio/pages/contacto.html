@@ -4,77 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
-    <title>Portafolio</title>
+    <title>MI PORTAFOLIO</title>
 </head>
 <body>
-     <!-- Menu encabezado -->
-     <div class="header_contenedor">
-        <header>
-            <div class="logo">
-                <a href="#">DUVAN PALACIO</a>
-            </div>
-            <nav id="header_nav" class="responsive">
-                <ul> 
-                    <li><a href="/index.html">INICIO</a></li>
-                    <li><a href="/pages/sobremi.html">SOBRE MI</a></li>
-                    <li><a href="/pages/skill.html">SKILL</a></li>
-                    <li><a href="/pages/curriculum.html">CURRICULUM</a></li>                
-                    <li><a href="/pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="header_nav_responsive">
-                <i class="fa-duotone fa-bars"></i>
+    <!-- Menu encabezado -->
+    <div class="header_contenedor">
+    <header>
+        <div class="logo">
+            <a href="#">DUVAN PALACIO</a>
+        </div>
+        <nav id="header_nav">
+            <ul>
+                <li><a href="/index.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="/pages/sobremi.html" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="/pages/skill.html" onclick="seleccionar()">SKILL</a></li>
+                <li><a href="/pages/curriculum.html" onclick="seleccionar()">CURRICULUM</a></li>                
+                <li><a href="/pages/contacto.html" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="header_nav_responsive" onclick="mostarOcultar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+    </div>
+    </header>
+
+    <!-- Sección de formulario contacto-->
+    <section id="inicio" class="inicio">
+        <div class="formulario_contenido">
+            <h2>CONTACTAME</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Numero de telefono">
+                    <input type="text" placeholder="Tu email de contacto">
+                    <input type="text" placeholder="Motivo de contacto">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="mensaje"></textarea>
+                    <button>
+                        Enviar contacto <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+
+                <!-- Imagen de mapa -->
+                <div class="col">
+                    <img src="../assets/img/maps.png" alt="Mapa">                
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Cra 38 #95A - 24 apto 401, Med
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                LLamame: (+57)350 5278111 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelopes-bulk"></i>
+                                Email: duvan.palacioo@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        </header>
-        <main class="main">
-            <section class="main__contacto">
-                <form action="post">
-                    <fieldset class="main__contacto__forum">
-                        <legend>CONTACTO</legend>
-                        <div class="main__contacto__forum__div">
-                            <label for="nom">Nombre y apellido</label>
-                            <input type="text" id="nom">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="correo">Ingresa correo</label>
-                            <input type="email" id="correo">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="num">Numero de telefono</label>
-                            <input type="number" id="num">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="empresa">Nombre de la empresa</label>
-                            <input type="text" id="empresa">
-                        </div>
-                        <br>
-                        <div>
-                            <h3>¿Cuál servicio te interesa?</h3>
-                            <label for="web">Creación pagina web</label>
-                            <input type="checkbox" name="paWeb" id="web">
-                        </div>
-                        <div>
-                            <label for="desing">Diseño personalizado</label>
-                            <input type="checkbox" name="oneDesing" id="desing">
-                        </div>
-                        <input type="submit" value="Enviar" class="btn_enviar">
-                        <input type="reset" value="Limpiar" class="btn_limpiar">
-                    </fieldset>
-                </form>
-            </section>
-        </main>     
-    <footer class="footer">
-        <section class="footer_imag">
-            <img src="../img/circulo.png" alt="circulo infinito" class="footer_imag_logo">
-        </section>
-        <section class="footer__txt">
-            <p class="footer__txt_p">Duvan Palacio</p>
-        </section>
-    </footer>
+    </section>
+    <script src="../js/script.js"></script>
 </body>
 </html>

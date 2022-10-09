@@ -15,17 +15,17 @@
             <div class="logo">
                 <a href="#">DUVAN PALACIO</a>
             </div>
-            <nav id="header_nav" class="responsive">
+            <nav id="header_nav">
                 <ul>
-                    <li><a href="/index.html">INICIO</a></li>
-                    <li><a href="/pages/sobremi.html">SOBRE MI</a></li>
-                    <li><a href="/pages/skill.html">SKILL</a></li>
-                    <li><a href="/pages/curriculum.html">CURRICULUM</a></li>                
-                    <li><a href="/pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="/index.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="/pages/sobremi.html" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="/pages/skill.html" onclick="seleccionar()">SKILL</a></li>
+                    <li><a href="/pages/curriculum.html" onclick="seleccionar()">CURRICULUM</a></li>                
+                    <li><a href="/pages/contacto.html" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="header_nav_responsive">
-                <i class="fa-duotone fa-bars"></i>
+            <div class="header_nav_responsive" onclick="mostarOcultar()">
+                <i class="fa-sharp fa-solid fa-bars"></i>
             </div>
         </div>
     </header>
@@ -101,5 +101,6 @@
             </div>
         </div>
     </section>
+    <script src="../js/script.js"></script>
 </body>
 </html>
