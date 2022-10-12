@@ -270,44 +270,54 @@ body {
     font-size: 15px;
 }
 
-.skill_contenido .skill .barra_html {
+.skill_contenido .skill .comunicacion {
     width: 0%;
-    animation: 2s barra_html forwards;
+    animation: 2s comunicacion forwards;
 }
 
-.skill_contenido .skill .barra_css {
+@keyframes comunicacion {
+    0% {width: 0%;}
+    100%{width: 70%;}
+}
+
+.skill_contenido .skill .trabajo {
     width: 0%;
-    animation: 2s barra_html forwards;
+    animation: 2s trabajo forwards;
 }
 
-.skill_contenido .skill .barra_git {
+@keyframes trabajo {
+    0% {width: 0%;}
+    100%{width: 96%;}
+}
+
+.skill_contenido .skill .dedicacion {
     width: 0%;
-    animation: 2s barra_html forwards;
+    animation: 2s dedicacion forwards;
 }
 
-.skill_contenido .skill .barra_javascript {
+@keyframes dedicacion {
+    0% {width: 0%;}
+    100%{width: 82%;}
+}
+
+.skill_contenido .skill .responsabilidad {
     width: 0%;
-    animation: 2s barra_html forwards;
+    animation: 2s responsabilidad forwards;
 }
 
-@keyframes barra_html {
+@keyframes responsabilidad {
     0% {width: 0%;}
-    100%{width: 85%;}
+    100%{width: 87%;}
+}
+ /* Estas clases van hacer con animación */
+ .skill_contenido .skill .puntualidad {
+    width: 0%;
+    animation: 2s puntualidad forwards;
 }
 
-@keyframes barra_css {
+@keyframes puntualidad {
     0% {width: 0%;}
-    100%{width: 65%;}
-}
-
-@keyframes barra_git {
-    0% {width: 0%;}
-    100%{width: 50%;}
-}
-
-@keyframes barra_javascript {
-    0% {width: 0%;}
-    100%{width: 10%;}
+    100%{width: 92%;}
 }
 
 /* C U R R I C U L U M */
