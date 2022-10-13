@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../assets/img/circulo.png">
+    <meta name="description" content="Desarollador web freelance, donde se visualizara mi cv o curriculum en el cual se podra descargar">
+    <meta name="keywords" content="cv, curriculum, estudios"/>
+    <meta name="author" content="Duvan Palacio">
     <link rel="stylesheet" href="../css/style.css">
     <title>Portafolio</title>
 </head>
@@ -13,17 +18,18 @@
         <div class="logo">
             <a href="#">DUVAN PALACIO</a>
         </div>
-        <nav id="header_nav" class="responsive">
+        <nav id="header_nav">
             <ul>
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/pages/sobremi.html">SOBRE MI</a></li>
-                <li><a href="/pages/skill.html">SKILL</a></li>
-                <li><a href="/pages/curriculum.html">CURRICULUM</a></li>                
-                <li><a href="/pages/contacto.html">CONTACTO</a></li>
+                <li><a href="/index.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="/pages/sobremi.html" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="/pages/skill.html" onclick="seleccionar()">SKILL</a></li>
+                <li><a href="/pages/curriculum.html" onclick="seleccionar()">CURRICULUM</a></li>                
+                <li><a href="/pages/contacto.html" onclick="seleccionar()">CONTACTO</a></li>
             </ul>
         </nav>
-        <div class="header_nav_responsive">
-            <i class="fa-duotone fa-bars"></i>
+        <div class="header_nav_responsive" onclick="mostarOcultar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            
         </div>
     </div>
     </header>
@@ -112,7 +118,12 @@
                     </div>  
                 </div>          
             </div>
+            <button>
+                Descarga CV <i class="fa-solid fa-cloud-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
         </div>
     </section>
+    <script src="../js/script.js"></script>
 </body>
 </html>

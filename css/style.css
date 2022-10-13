@@ -82,7 +82,7 @@ body {
     padding: 40px;
     background-color: #1e2326;
     max-width: 450px;
-    margin: auto;
+    margin: 1rem auto;
     text-align: center;
     border-radius: 30px;
 }
@@ -186,6 +186,7 @@ body {
 .sobremi_contenido .filas .columnas .sobremi_intereses {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sobremi_contenido .filas .columnas .sobremi_intereses .interes {
@@ -193,7 +194,7 @@ body {
     height: 100px;
     background-color: #252a2e;
     border-radius: 10px;
-    margin: 0 15px 15px 0;
+    margin: 0.3rem 0.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +213,7 @@ body {
 
 /* S K I L L */
 .skill_contenido {
-    background-color: #252a2e;
+    background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
@@ -229,10 +230,20 @@ body {
     padding: 20px 0;
 }
 
+.skill_contenido h3 {
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 30px;
+}
+
 .skill_contenido .fila {
     display: flex;
 }
 
+.skill_contenido .fila .columna {
+    width: 50%;
+    padding: 0 20px;
+}
 
 .skill_contenido .skill > span {
     font-weight: bold;
@@ -269,44 +280,80 @@ body {
     font-size: 15px;
 }
 
-.skill_contenido .skill .barra_html {
+.skill_contenido .skill .comunicacion {
     width: 0%;
-    animation: 2s barra_html forwards;
+    animation: 2s comunicacion forwards;
 }
 
-.skill_contenido .skill .barra_css {
+@keyframes comunicacion {
+    0% {width: 0%;}
+    100%{width: 70%;}
+}
+
+.skill_contenido .skill .trabajo {
     width: 0%;
-    animation: 2s barra_html forwards;
+    animation: 2s trabajo forwards;
 }
 
-.skill_contenido .skill .barra_git {
+@keyframes trabajo {
+    0% {width: 0%;}
+    100%{width: 96%;}
+}
+
+.skill_contenido .skill .dedicacion {
     width: 0%;
-    animation: 2s barra_html forwards;
+    animation: 2s dedicacion forwards;
 }
 
-.skill_contenido .skill .barra_javascript {
+@keyframes dedicacion {
+    0% {width: 0%;}
+    100%{width: 82%;}
+}
+
+.skill_contenido .skill .responsabilidad {
     width: 0%;
-    animation: 2s barra_html forwards;
+    animation: 2s responsabilidad forwards;
 }
 
-@keyframes barra_html {
+@keyframes responsabilidad {
     0% {width: 0%;}
-    100%{width: 85%;}
+    100%{width: 87%;}
+}
+ /* Estas clases van hacer con animación */
+ .skill_contenido .skill .puntualidad {
+    width: 0%;
+    animation: 2s puntualidad forwards;
 }
 
-@keyframes barra_css {
+@keyframes puntualidad {
     0% {width: 0%;}
-    100%{width: 65%;}
+    100%{width: 67%;}
+}
+.skill_contenido .fila .columna .skill_tecnica {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@keyframes barra_git {
-    0% {width: 0%;}
-    100%{width: 50%;}
+.skill_contenido .fila .columna .skill_tecnica .skills {
+    width: 150px;
+    height: 150px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0.3rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
 }
 
-@keyframes barra_javascript {
-    0% {width: 0%;}
-    100%{width: 10%;}
+.skill_contenido .fila .columna .skill_tecnica .skills:hover {
+    background-color: #1CB698;
+}
+
+.skill_contenido .skill_tecnica img {
+    width: 70px;
 }
 
 /* C U R R I C U L U M */
@@ -319,7 +366,7 @@ body {
 
 .inicio .curriculum_contenido {
     max-width: 1100px;
-    margin: auto;
+    margin: 140px auto;
 }
 
 .curriculum_contenido h2 {
@@ -343,6 +390,7 @@ body {
     font-size: 20px;
     font-family: 'Righteous';
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .curriculum_contenido .fila .izquierda {
@@ -434,6 +482,135 @@ body {
     bottom: 4px;
 }
 
+.curriculum_contenido button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+.curriculum_contenido button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.curriculum_contenido button:hover .overlay {
+    width: 100%;
+}
+/* C O N T A C T O */
+
+.formulario_contenido {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.inicio .formulario_contenido {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.formulario_contenido h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.formulario_contenido .fila {
+    display: flex;
+}
+
+.formulario_contenido .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.formulario_contenido .col input, .formulario_contenido .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: #fff;
+    font-size: 18px;
+}
+
+.formulario_contenido button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.formulario_contenido button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.formulario_contenido button:hover .overlay {
+    width: 100%;
+}
+
+.formulario_contenido .col img {
+    width: 100%;
+}
+
+.formulario_contenido .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252a2e;
+    padding: 20px;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formulario_contenido .col .info ul {
+    list-style: none;
+}
+
+.formulario_contenido .col .info ul li {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.formulario_contenido .col .info ul li i {
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
 @media screen and (max-width:980px){
     nav {
         display: none;
@@ -491,6 +668,14 @@ body {
 
     .curriculum_contenido .fila .derecha {
         margin-left: 20px;
+    }
+
+    .formulario_contenido .fila {
+        display: block;
+    }
+
+    .formulario_contenido .fila .col {
+        width: 100%;
     }
 }
 

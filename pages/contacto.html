@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../assets/img/circulo.png">
+    <meta name="description" content="Desarollador web freelance, mi pagina de contacto">
+    <meta name="keywords" content="medellin, contacto, email, telefono, motivo">
+    <meta name="author" content="Duvan Palacio">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MI PORTAFOLIO</title>
+</head>
+<body>
+    <!-- Menu encabezado -->
+    <div class="header_contenedor">
+    <header>
+        <div class="logo">
+            <a href="#">DUVAN PALACIO</a>
+        </div>
+        <nav id="header_nav">
+            <ul>
+                <li><a href="/index.html" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="/pages/sobremi.html" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="/pages/skill.html" onclick="seleccionar()">SKILL</a></li>
+                <li><a href="/pages/curriculum.html" onclick="seleccionar()">CURRICULUM</a></li>                
+                <li><a href="/pages/contacto.html" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="header_nav_responsive" onclick="mostarOcultar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+    </div>
+    </header>
+
+    <!-- Sección de formulario contacto-->
+    <section id="inicio" class="inicio">
+        <div class="formulario_contenido">
+            <h2>CONTACTAME</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Numero de telefono">
+                    <input type="text" placeholder="Tu email de contacto">
+                    <input type="text" placeholder="Motivo de contacto">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="mensaje"></textarea>
+                    <button>
+                        Enviar contacto <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+
+                <!-- Imagen de mapa -->
+                <div class="col">
+                    <img src="../assets/img/maps.png" alt="Mapa">                
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Cra 38 #95A - 24 apto 401, Med
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                LLamame: (+57)350 5278111 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelopes-bulk"></i>
+                                Email: duvan.palacioo@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+</html>
