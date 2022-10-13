@@ -213,7 +213,7 @@ body {
 
 /* S K I L L */
 .skill_contenido {
-    background-color: #252a2e;
+    background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
@@ -230,10 +230,20 @@ body {
     padding: 20px 0;
 }
 
+.skill_contenido h3 {
+    font-size: 20px;
+    font-family: 'Righteous';
+    margin-bottom: 30px;
+}
+
 .skill_contenido .fila {
     display: flex;
 }
 
+.skill_contenido .fila .columna {
+    width: 50%;
+    padding: 0 20px;
+}
 
 .skill_contenido .skill > span {
     font-weight: bold;
@@ -317,7 +327,33 @@ body {
 
 @keyframes puntualidad {
     0% {width: 0%;}
-    100%{width: 92%;}
+    100%{width: 67%;}
+}
+.skill_contenido .fila .columna .skill_tecnica {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill_contenido .fila .columna .skill_tecnica .skills {
+    width: 150px;
+    height: 150px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0.3rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.skill_contenido .fila .columna .skill_tecnica .skills:hover {
+    background-color: #1CB698;
+}
+
+.skill_contenido .skill_tecnica img {
+    width: 70px;
 }
 
 /* C U R R I C U L U M */
@@ -354,6 +390,7 @@ body {
     font-size: 20px;
     font-family: 'Righteous';
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .curriculum_contenido .fila .izquierda {
@@ -445,6 +482,34 @@ body {
     bottom: 4px;
 }
 
+.curriculum_contenido button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    position: relative;
+    z-index: 10;
+}
+
+.curriculum_contenido button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.curriculum_contenido button:hover .overlay {
+    width: 100%;
+}
 /* C O N T A C T O */
 
 .formulario_contenido {
